@@ -1,0 +1,64 @@
+group: philforhockey51
+name: farm-fields-diagonal-and-fa2
+version: "1.0.1"
+subfolder: 410-agriculture
+info:
+  summary: PHIL Farm Fields - Diagonal & FA2
+  description: |-
+    PHIL - Farm Fields - Diagonal & FA2
+
+    30 Lots in Diagonal and FA2 variations.
+
+    These are eyecandy neutral fillers to smooth out the hard edges of farm field angles.  
+    The set includes the two maxis fields and the three VIP girafe crops.  
+    All five come in two versions of diagonal and four versions of FA2.  
+    For the 'b' versions the base texture and crops are rotated allowing for a match to different row directions.  
+    SPOT is used on the crop side in the direction of the rows for help in placement.
+
+    Notes:  
+    \- I have a diagonal maxis farm filler set in my plugins library I believe was created by bripizza and  
+     shared on a Japanese site probably now long gone. I wanted to give people access to this type of filler  
+     and in the process expanded it to include diagonal fillers for the VIP crops. They turned out to be a good size  
+     prop to be able to create FA lots so the set expanded.  
+    \- Thank you to hugues aroux and the scoty team for Beautiful new icons  
+    \- Thank you to girafe and the VIP team for creating these great props with a full timed crop cycle  
+    \- Two kevins were lost in the making of these lots, kevin12 will be missed, kevin 27.. ahh.. he used to eat the glue  
+       
+     Dependencies:  
+    Texture  
+      Base: Maxis SC4 base textures  
+      Overlay Diagonal: SFBT ArkenbergJoe Texturen - [SFBT Essentials](https://www.sc4evermore.com/index.php/downloads/download/22-dependencies/13-sfbt-essentials)  
+      Overlay FA2: KOSC FA$Grass - [Industrial Revolution Mod Base FA Filler Set](https://community.simtropolis.com/files/file/32426-industrial-revolution-mod-base-fa-filler-set/)  
+    Props  
+      VIP Girafe Agripack Crops - [BSC VIP Girafe Agripack Vol01 v2](https://www.sc4evermore.com/index.php/downloads/download/43-agriculture/210-bsc-vip-girafe-agripack-vol01-v2)  
+      SimPegOrientationTool -  [SPOT](https://community.simtropolis.com/files/file/24509-spot-simpeg-plop-orientation-tool/)
+  author: philforhockey51
+  website: https://community.simtropolis.com/files/file/36738-farm-fields-diagonal-fa2/
+  images:
+    - https://www.simtropolis.com/objects/screens/monthly_2025_02/67bb3f934a101_FieldsDiagFA01.jpg.6a4b183f5bc8b99bc776e3786f22cb7d.jpg
+    - https://www.simtropolis.com/objects/screens/monthly_2025_02/67bb3f9603184_FieldsDiagFA02.jpg.e783c401ba6d66e203fdff1c4a7e0181.jpg
+    - https://www.simtropolis.com/objects/screens/monthly_2025_02/67bb3f98cc6c6_PHILFieldsDiagFA21.jpg.3ab4bee157030d5a96ccc48a4362e457.jpg
+    - https://www.simtropolis.com/objects/screens/monthly_2025_02/67bb3faba5bb2_PHILFieldsDiagFA23.jpg.e4d7e0c57ff5eb0e90580b1e143bfbc4.jpg
+    - https://www.simtropolis.com/objects/screens/monthly_2025_02/67bb3fb568a0f_PHILFieldsDiagFA24.jpg.dea131ddfa8496e6887ddea453994c1c.jpg
+    - https://www.simtropolis.com/objects/screens/monthly_2025_02/67bb3fd3f1d22_PHILFieldsDiagFA25.jpg.38dcfc73c0e8bfc39bc618f2d74facf3.jpg
+    - https://www.simtropolis.com/objects/screens/monthly_2025_03/67c8ee80bee2b_DiagFA2FieldsT3.jpg.8614d6a6cc7634fef904259fe5437dbc.jpg
+dependencies:
+  - girafe:agripack-props
+  - kingofsimcity:irm-base-fa-filler-set
+  - peg:spot
+  - sfbt:essentials
+assets:
+  - assetId: philforhockey51-farm-fields-diagonal-and-fa2-part0
+  - assetId: philforhockey51-farm-fields-diagonal-and-fa2-part1
+
+---
+assetId: philforhockey51-farm-fields-diagonal-and-fa2-part0
+version: "1.0.1"
+lastModified: "2025-03-06T00:56:12Z"
+url: https://community.simtropolis.com/files/file/36738-farm-fields-diagonal-fa2/?do=download&r=206287
+
+---
+assetId: philforhockey51-farm-fields-diagonal-and-fa2-part1
+version: "1.0.1"
+lastModified: "2025-03-06T00:56:12Z"
+url: https://community.simtropolis.com/files/file/36738-farm-fields-diagonal-fa2/?do=download&r=206288

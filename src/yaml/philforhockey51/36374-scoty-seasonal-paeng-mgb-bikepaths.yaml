@@ -1,0 +1,88 @@
+group: philforhockey51
+name: scoty-seasonal-paeng-mgb-bikepaths
+version: "1.0.0"
+subfolder: 660-parks
+info:
+  summary: PHIL Scoty Seasonal Paeng MGB Bikepaths
+  description: |-
+    **PHIL Scoty Seasonal Paeng MGB Bikepaths**
+
+    A set of lots that add seasonal flora and path color options overlay texture covers for existing Paeng bikepath lots. This also includes a new additional standalone set that provides the option of having a second color bike path in your city.
+
+    Why is the name so long you might ask, because so many were involved in getting this project to this point.  
+    First we have to thank the original creator of the bike paths Paeng. His Bike Paths with Alley Parks is the basis of these bike paths.  
+    Then we have to thank MGB for his update that added Lights and Seasonal Hedges to the Bike Paths along with some additional lots.
+
+    Though nothing wrong with the bike paths they needed an update and some options to expand the set. In speaking with hugues aroux he agreed to get his minions of cloned Kevins to produce new Scoty textures to update the bike paths. He must have promised them second breakfast because they came up with 4 color options along with new planter overlays.  
+    The 4 color options are Red, Green old, Green new, and Blue. Two versions of each were created a cover set and a double set. You can select one color for the covers set and select a different color for the dbl set. Seasonal props from Girafe's Flora Pack were added to the lots along with some small prop adjustments. A set of diagonal lots were also added to expand the pack.
+
+    Within the download folder you will find two folders the Documents folder, with the read me and pictures, and the PHIL Seasonal Paeng MGB bikepaths folder that contains the lots and textures and is the folder you place in your plugins folder after selecting your options. This folder should be placed in a location that loads After the Paeng and MGB bikepath files, consider adding zz to the front of the folder name.
+
+    In the PHIL Seasonal Paeng MGB Bikepath folder you will find Two folders: the Cover set and the Double or Dbl set.  
+    Within the Cover folder are the Cover set lots folder and the Scoty TexPaths Cover folder. Choose One of the four cover color files in the Scoty Texpaths Cover folder and store the rest out of your plugins folder. This set overrides any existing Paeng and MGB bikepath lots you already may have in your city. It adds 13 additional lots for diagonals that will use the color you picked for the covers.  
+    Within the Dbl folder are the Double set lots folder and the Scoty TexPaths Dbl folder. Choose One of the four dbl color files and store the rest out of your plugins folder. This set is a standalone set and can be placed in your city along with the existing original paeng or mgb sets or with the covers set. You can choose a color different from the covers set and have two different bikepath colors in your city. The 13 additional diagonal lots are included in this set as well.
+
+    Notes:  
+     -The covers will work on Paeng's base set of lots, Paeng's SSDP bikepath lots, MGB's Light Project update and it's additional crossover lots, and adds the diagonal lots.    
+     -Each set has their own new icons for the game menu.  
+     -The cover set is not a dependency of the dbl set however all original dependencies are still dependencies for the dbl set.  
+     -No Kevins were harmed in the making of these textures, that one Kevin that fell in the ink well was on a different project.    
+     -The lots can be found in the Misc transportation menu like the originals.  
+     -There are slight variations to prop layout on some lots between the cover and dbl set but most follow the same layout.  
+     -All lots will adjust to your sidewalk mod.  
+     -Other than the Functional Bustop and Parking Ends these lots do not have additional functions, they do not function like pedmalls.
+
+    Dependencies:
+
+    -   Req - Original Paeng Base Set - [Paeng's Bicycle Paths with Alley Parks](https://community.simtropolis.com/files/file/26110-paengs-bicycle-paths-with-alley-parks/)[](https://community.simtropolis.com/files/file/27698-murimk-props-vol03-industrials/)
+    -   Req - MGB Light Update Set - [MGB-LP Paeng Bike Paths](https://community.simtropolis.com/forums/topic/761517-mgbs-lil-bits/?do=findComment&comment=1768699)
+    -   Req - Paengs SSDP - [Paeng's StreetSide Diagonal Parking (SSDP)](https://community.simtropolis.com/files/file/31162-paengs-streetside-diagonal-parking-ssdp/)
+    -   Req - Murimk Bikes - [Murimk Bicycle props](https://community.simtropolis.com/files/file/25681-murimk-props-vol01-bicycle-props-with-bikers-mmp/)
+    -   Req - Porkie Props vol 1 -  [JENX-Porkie Expanded Porkie Props](https://www.sc4evermore.com/index.php/downloads/download/22-dependencies/10-jenxporkie-expanded-porkie-props)
+    -   Req - Girafe Seasonal Flora - [SC4D LEX LEGACY - BSC VIP Girafe Flora Pack](https://www.sc4evermore.com/index.php/downloads/download/25-flora-fauna-and-mayor-mode-ploppables/27-sc4d-lex-legacy-bsc-vip-girafe-flora)
+    -   Opt - SimPegOrientationTool -  [SPOT](https://community.simtropolis.com/files/file/24509-spot-simpeg-plop-orientation-tool/)
+
+    Req Props from [SC4D LEX Legacy - BSC Common Dependencies Pack](https://www.sc4evermore.com/index.php/downloads/download/22-dependencies/3-sc4d-lex-legacy-bsc-common-dependencies-pack):
+
+    -   Props - BSC MEGA Props SG Vol01
+    -   Props - BSC VIP Girafe Hedges
+
+    Textures:
+
+    -   Included - Scoty Bikepath Textures
+    -   Req - Additional Planter Textures -  [Scoty Textures Packs](https://community.simtropolis.com/files/file/36297-scoty-textures-packs/)
+
+    Note the original dependencies required for the original sets by Paeng and MGB, along with the dependencies they add, are required.
+
+    Give a Big Thank You to hugues aroux for all the great texture work, icons and help in creating this project. This project is as much his as it is mine.  
+    A thank you to Paeng for the original set all of this is based on and a thank you to MGB for the work he did on his update and the help he gave in this project.
+
+    Hope you enjoy them,
+
+    ~Phil
+  author: philforhockey51
+  website: https://community.simtropolis.com/files/file/36374-scoty-seasonal-paeng-mgb-bikepaths/
+  images:
+    - https://www.simtropolis.com/objects/screens/monthly_2024_08/66b13c0d07a84_PhilScoty4colorsBikepath.jpg.e05315ba353b7f0baf04edeaa667a11c.jpg
+    - https://www.simtropolis.com/objects/screens/monthly_2024_08/66b13c5a5bfaa_PhilScotyBikePath2.jpeg.c060b793f9b6801774b33bedeb707892.jpeg
+    - https://www.simtropolis.com/objects/screens/monthly_2024_08/66b13c5d2d2b6_PhilScotyBikePath3.jpeg.5df0ab99190d4b537c8063d26ccfa10f.jpeg
+    - https://www.simtropolis.com/objects/screens/monthly_2024_08/66b13c602b716_PhilScotyBikePath4.jpg.58fad260049cd7dc6197a6e55a2d5e81.jpg
+dependencies:
+  - paeng:bicycle-paths-with-alley-parks
+  - MGB Light Update Set - [MGB-LP Paeng Bike Paths](https://community.simtropolis.com/forums/topic/761517-mgbs-lil-bits/?do=findComment&comment=1768699)
+  - hugues-aroux:textures-pack
+  - murimk:props-vol01-bicycles
+  - murimk:props-vol03-industrials
+  - paeng:streetside-diagonal-parking-textures
+  - peg:spot
+  - porkissimo:jenx-porkie-expanded-porkie-props
+  - bsc:mega-props-sg-vol01
+  - girafe:hedges
+assets:
+  - assetId: philforhockey51-scoty-seasonal-paeng-mgb-bikepaths
+
+---
+assetId: philforhockey51-scoty-seasonal-paeng-mgb-bikepaths
+version: "1.0.0"
+lastModified: "2024-08-05T22:12:46Z"
+url: https://community.simtropolis.com/files/file/36374-scoty-seasonal-paeng-mgb-bikepaths/?do=download&r=202266
