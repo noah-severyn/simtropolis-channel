@@ -69,7 +69,7 @@ info:
     - https://www.simtropolis.com/objects/screens/monthly_2024_08/66b13c602b716_PhilScotyBikePath4.jpg.58fad260049cd7dc6197a6e55a2d5e81.jpg
 dependencies:
   - paeng:bicycle-paths-with-alley-parks
-  - MGB Light Update Set - [MGB-LP Paeng Bike Paths](https://community.simtropolis.com/forums/topic/761517-mgbs-lil-bits/?do=findComment&comment=1768699)
+  # - mgb204:lp-paeng-bikepaths
   - hugues-aroux:textures-pack
   - murimk:props-vol01-bicycles
   - murimk:props-vol03-industrials
@@ -78,6 +78,16 @@ dependencies:
   - porkissimo:jenx-porkie-expanded-porkie-props
   - bsc:mega-props-sg-vol01
   - girafe:hedges
+  - girafe:bushes
+  - girafe:sparaxis
+  - girafe:narcissus
+  - girafe:elms
+  - girafe:rowan-trees
+  - shk:parking-pack
+  - girafe:ashes
+  - girafe:beeches
+  - girafe:maples
+  - girafe:daisy
 assets:
   - assetId: philforhockey51-scoty-seasonal-paeng-mgb-bikepaths
 

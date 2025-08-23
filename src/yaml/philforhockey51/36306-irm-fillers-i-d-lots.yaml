@@ -51,6 +51,7 @@ dependencies:
   - bsc:mega-props-jes-vol02
   - bsc:mega-props-jes-vol03
   - bsc:mega-props-jes-vol05
+  - bsc:mega-props-dae-vol01
   - bsc:mega-props-sg-vol01
   - sfbt:essentials
   - murimk:props-vol03-industrials

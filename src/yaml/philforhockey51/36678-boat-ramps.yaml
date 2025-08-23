@@ -18,6 +18,8 @@ info:
 
     ~Phil
 
+    It is highly recommended you also use `pkg:memo:transparent-texture-fix-dll`.
+
     Dependencies:
 
     Texture: [BSC TexturePack](https://www.sc4evermore.com/index.php/downloads/download/22-dependencies/3-sc4d-lex-legacy-bsc-common-dependencies-pack)  
@@ -52,7 +54,7 @@ info:
 dependencies:
   - bsc:textures-vol01
   - hugues-aroux:textures-pack
-  - '"[Scoty MP Textures](https://community.simtropolis.com/files/file/33635-scoty-mp-textures/)"'
+  - hugues-aroux:modular-parking-street-textures
   - peg:mtp-super-pack
   - bsc:vip-girafe-urbanpack-vol01
   - peg:pppond-lot-props
@@ -62,12 +64,13 @@ dependencies:
   - vip:vnaoned-props-pack-vol01
   - vip:rural-pack
   - peg:cdk3-super-pak
-  - '"[PEG-CDKM Boat Ramp](https://community.simtropolis.com/files/file/18772-peg-cdkm-boat-ramp/)"'
+  # - peg:cdkm-boat-ramp
   - agc:street-props
   - agc:casual-sims-dlc-props
   - sfbt:essentials
   - aln:rrp-fences-props
-  - memo:transparent-texture-fix-dll
+  - girafe:feather-grass
+  - girafe:cattails
 assets:
   - assetId: philforhockey51-boat-ramps
 

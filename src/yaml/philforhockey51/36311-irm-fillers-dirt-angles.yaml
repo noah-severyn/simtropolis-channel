@@ -59,6 +59,7 @@ dependencies:
   - bsc:mega-props-cp-vol01
   - sfbt:essentials
   - murimk:props-vol03-industrials
+  - bsc:textures-vol03
 assets:
   - assetId: philforhockey51-irm-fillers-dirt-angles
 

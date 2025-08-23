@@ -47,18 +47,19 @@ dependencies:
   - kingofsimcity:irm-base-fa-filler-set
   - peg:spot
   - sfbt:essentials
+  - bsc:textures-vol03
 assets:
-  - assetId: philforhockey51-farm-fields-diagonal-and-fa2-part0
-  - assetId: philforhockey51-farm-fields-diagonal-and-fa2-part1
+  - assetId: philforhockey51-farm-fields-diagonal-and-fa2
+  - assetId: philforhockey51-farm-fields-diagonal-and-fa2-transparent
 
 ---
-assetId: philforhockey51-farm-fields-diagonal-and-fa2-part0
+assetId: philforhockey51-farm-fields-diagonal-and-fa2
 version: "1.0.1"
 lastModified: "2025-03-06T00:56:12Z"
 url: https://community.simtropolis.com/files/file/36738-farm-fields-diagonal-fa2/?do=download&r=206287
 
 ---
-assetId: philforhockey51-farm-fields-diagonal-and-fa2-part1
+assetId: philforhockey51-farm-fields-diagonal-and-fa2-transparent
 version: "1.0.1"
 lastModified: "2025-03-06T00:56:12Z"
 url: https://community.simtropolis.com/files/file/36738-farm-fields-diagonal-fa2/?do=download&r=206288
