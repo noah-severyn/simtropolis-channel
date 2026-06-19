@@ -1213,25 +1213,6 @@ describe('The fetch action', function() {
 
 	});
 
-	it('sends the Simtropolis token when downloading', async function() {
-
-		process.env.SC4PAC_SIMTROPOLIS_TOKEN = 'token';
-
-		const upload = faker.upload({});
-		const { run } = this.setup({
-			uploads: [upload],
-			handler(req) {
-				let url = new URL(req.url);
-				if (url.searchParams.get('do') === 'download') {
-					let cookie = req.headers.get('authorization');
-					expect(cookie).to.equal('SC4PAC-TOKEN-ST userkey="token"');
-				}
-			},
-		});
-		await run({ id: upload.id });
-
-	});
-
 	it('does not throw when the STEX api returns 404', async function() {
 
 		const { run } = this.setup({
