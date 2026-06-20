@@ -1,0 +1,19 @@
+name: auto-update
+
+on:
+  #schedule:  # uncomment and adjust for periodic runs (stops after 2 months of inactivity)
+  #  - cron: '15 16 * * 0'  # 4:15 pm UTC on Sundays
+  workflow_dispatch:  # trigger the workflow manually from the Actions tab
+
+jobs:
+  auto-update:
+    uses: memo33/sc4pac-actions/.github/workflows/sc4pac-channel-updates.yaml@main
+    with:
+      path: src/yaml
+      api: sc4e  # sc4e,stex
+      deploy-repository: OWNER/REPO  # your GitHub repository
+    secrets:
+      stex-api-key: ${{ secrets.STEX_API_KEY }}  # remove this unless using the stex api
+      pat: ${{ secrets.SC4PAC_SIMTROPOLIS_TOKEN }}
+    permissions:
+      pull-requests: write
