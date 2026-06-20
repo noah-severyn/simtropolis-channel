@@ -10,6 +10,7 @@ This repository contains the following scripts, some of which add new features o
 - [`npm run build`](#npm-run-build) - Rebuild the Simtropolis sc4pac channel to include the new metadata
 - [`npm run prune`](#npm-run-prune) - Scan each lot to find dependencies not listed in the metadata.
 - [`npm run list`](#npm-run-list) - Generate a list of dependencies from a package in a standard format.
+- [`npm run list:version-mismatches`](#npm-run-listversion-mismatches) - Report packages where STEX and channel versions differ.
 - [`npm run symlink`](#npm-run-symlink) - Create a symlink between test plugins folder and game plugins folder.
 - [`npm run sc4pac`](#npm-run-sc4pac) - Install packages in this channel or the default channel with sc4pac.
 - [`npm run plop`](#npm-run-plop-and-sc4-city-plop) - Plop lots in a city for testing.
@@ -204,6 +205,19 @@ npm run list -- simmer2:5g-* mattb325:ikea* --default-only
 An example result file for the command `npm run list -- simmer2:5g-* mattb325:ikea*` can be found here: [result.zip](https://github.com/user-attachments/files/18521437/result.zip)
 
 ![image](https://github.com/user-attachments/assets/b375dd4a-db3d-49dc-9eaf-6453df32ca15)
+
+## `npm run list:version-mismatches`
+This script checks all local package metadata against the live STEX API and reports where versions differ.
+The comparison ignores metadata-only suffixes such as `-1` on the channel version, so `1.2-1` and `1.2` are treated as a match.
+
+``` sh
+npm run list:version-mismatches
+```
+
+Optional flags:
+``` sh
+npm run list:version-mismatches -- --show-missing
+```
 
 
 

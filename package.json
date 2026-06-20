@@ -27,6 +27,7 @@
     "symlink": "node --env-file=.env scripts/symlink.js",
     "plop": "node --env-file=.env scripts/plop-all.js",
     "list": "node scripts/list-dependencies.js",
+    "list:version-mismatches": "node --env-file=.env scripts/list-version-mismatches.js",
     "fetch": "gh workflow run add-packages.yaml",
     "deploy": "gh workflow run deploy.yaml",
     "lint": "eslint actions/**/*.js",
