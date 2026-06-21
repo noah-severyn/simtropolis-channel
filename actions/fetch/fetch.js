@@ -20,6 +20,7 @@ export default async function fetchPackage(opts) {
 		after,
 		endpoint = 'https://community.simtropolis.com/stex/files-api.php',
 		cache = false,
+		raw = false,
 	} = opts;
 
 	// Build up the url. Apparently we have to set mode to updated explicitly, 
@@ -82,6 +83,19 @@ export default async function fetchPackage(opts) {
 		throw new Error(`File ${id} was not found!`);
 	} else if (res.status === 404) {
 		json = [];
+	}
+
+	// Return early with just the raw API result, without processing metadata.
+	// Otherwise, upload permissions are checked, and the metadata.yaml file is combined 
+	// with the API result to produce package data.
+	if (raw) {
+		return {
+			timestamp: (storeLastRun ? nextLastRun : false),
+			uploads: json,
+			packages: [],
+			notices: [],
+			warnings: [],
+		};
 	}
 
 	// Handle all files one by one to not flood Simtropolis.
