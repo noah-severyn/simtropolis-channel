@@ -44,6 +44,9 @@ for (let pkg of explicit) {
 	let dependencies = dependenciesByPackage[pkg] ?? [];
 	let result = await tracker.track(pkg, { dependencies });
 	let set = new Set(result.packages);
+	// If SimFox' day and nite mod was tracked as a dependency, this is 
+	// because a light cone was referenced with the mod active. We exclude 
+	// this.
 	set.delete('simfox:day-and-nite-mod');
 	result.packages = index[pkg] = [...set];
 	results.push({
@@ -67,11 +70,7 @@ if (argv.force || argv.f) {
 		let deps = index[id];
 		if (!(deps?.length > 0)) return;
 
-		// If SimFox' day and nite mod was tracked as a dependency, this is 
-		// because a light cone was referenced with the mod active. We exclude 
-		// this.
 		pkg.dependencies = deps;
 		return pkg;
-
 	});
 }

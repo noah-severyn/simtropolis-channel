@@ -11,6 +11,7 @@ This repository contains the following scripts, some of which add new features o
 - [`npm run prune`](#npm-run-prune) - Scan each lot to find dependencies not listed in the metadata.
 - [`npm run list`](#npm-run-list) - Generate a list of dependencies from a package in a standard format.
 - [`npm run list:version-mismatches`](#npm-run-listversion-mismatches) - Report packages where STEX and channel versions differ.
+- [`npm run update:images`](#npm-run-updateimages) - Find image URLs that have been updated in the STEX entry.
 - [`npm run symlink`](#npm-run-symlink) - Create a symlink between test plugins folder and game plugins folder.
 - [`npm run sc4pac`](#npm-run-sc4pac) - Install packages in this channel or the default channel with sc4pac.
 - [`npm run plop`](#npm-run-plop-and-sc4-city-plop) - Plop lots in a city for testing.
@@ -219,6 +220,27 @@ Optional flags:
 npm run list:version-mismatches -- --show-missing
 ```
 
+## `npm run update:images`
+This script checks the STEX entry for any image urls that do not match what is listed in the metadata.
+Often, after uploads were restored to the STEX after the site outage, new screenshots were added with new urls; sc4pac otherwise does not know about these changes.
+It supports `group:name` glob filters.
+
+By default it reads from JSON files in `dist/channel/`, so [build](#npm-run-build) the channel first.
+
+``` sh
+npm run update:images -- mattb325:*
+npm run update:images -- mattb325:ikea*
+npm run update:images -- mattb325:* simmer2:5g-*
+```
+
+### Updating metadata
+
+By default, the results are only output to the CLI. the `--force` argument modifies the generated metadata by adding replacing image urls in the package metadata directly.
+``` sh
+npm run update:images -- mattb325:* --force
+```
+
+Note that it is advised to only use this argument after committing the initially generated metadata so that it's easy to see what the pruning has changed.
 
 
 ## `npm run symlink`
