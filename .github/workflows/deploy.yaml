@@ -25,7 +25,7 @@ jobs:
       cancel-in-progress: false
     steps:
     - name: Checkout
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         ref: main
         persist-credentials: false
@@ -51,15 +51,15 @@ jobs:
     - name: Copy coverage report to pages output
       run: cp -r docs tmp_gh-pages/docs
     - name: Setup Pages
-      uses: actions/configure-pages@v4
+      uses: actions/configure-pages@v6
     - name: Upload artifact
       # note that this action dereferences our `latest` symlinks, but that's not a huge problem, it just duplicates each json file (could maybe be avoided by using tar)
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-pages-artifact@v5
       with:
         path: 'tmp_gh-pages'
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v4
+      uses: actions/deploy-pages@v5
     permissions:
       pages: write
       id-token: write
