@@ -1,11 +1,7 @@
 name: Deploy channel
 
 on:
-  workflow_dispatch: #
-  workflow_call: #
-    secrets:
-      STEX_API_KEY:
-        required: true
+  workflow_dispatch:
   push:
     paths:
       - 'src/yaml/**'
@@ -13,7 +9,20 @@ on:
       - main
 
 jobs:
+  build:
+    uses: memo33/sc4pac-actions/.github/workflows/sc4pac-channel.yaml@main
+    with:
+      path: src/yaml
+      channel-label: ${{ vars.CHANNEL_LABEL }}
+      deploy-repository: sebamarynissen/simtropolis-channel
+      sc4pac-tools-submodule: ''   # whatever it uses today
+      skip-pages-upload: true # Allows us to build the Coverage Report
+    secrets:
+      stex-api-key: ${{ secrets.STEX_API_KEY }}
+      sc4pac-simtropolis-token: ${{ secrets.SC4PAC_SIMTROPOLIS_TOKEN }}
+
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     environment:
       name: github-pages
@@ -24,42 +33,33 @@ jobs:
       group: "pages"
       cancel-in-progress: false
     steps:
-    - name: Checkout
-      uses: actions/checkout@v7
+    - uses: actions/checkout@v6
       with:
         ref: main
         persist-credentials: false
-        submodules: recursive
-    - name: Build channel and website
-      uses: memo33/sc4pac-actions/actions/build@main
+    - name: Download built pages
+      uses: actions/download-artifact@v4
       with:
-        path: src/yaml
-        pages-output-path: 'tmp_gh-pages'
-        channel-label: ${{ vars.CHANNEL_LABEL }}
-        metadata-source-url: ${{ format('https://github.com/{0}/blob/{1}/{2}/', github.repository, github.event.repository.default_branch, 'src/yaml') }}
-    - name: Move channel content to root
+        name: ${{ needs.build.outputs.pages-artifact-name }}
+        path: tmp_gh-pages
+    - name: Assemble Pages content
       run: |
         mv tmp_gh-pages/channel/* tmp_gh-pages/
         rmdir tmp_gh-pages/channel
-    - name: Install npm dependencies
+        cp -r docs tmp_gh-pages/docs
+    - name: Install dependencies
       run: npm ci
     - name: Update coverage report
       run: node scripts/scan-coverage.js
       continue-on-error: true
       env:
         STEX_API_KEY: ${{ secrets.STEX_API_KEY }}
-    - name: Copy coverage report to pages output
-      run: cp -r docs tmp_gh-pages/docs
-    - name: Setup Pages
-      uses: actions/configure-pages@v6
-    - name: Upload artifact
-      # note that this action dereferences our `latest` symlinks, but that's not a huge problem, it just duplicates each json file (could maybe be avoided by using tar)
-      uses: actions/upload-pages-artifact@v5
+    - uses: actions/configure-pages@v6
+    - uses: actions/upload-pages-artifact@v5
       with:
-        path: 'tmp_gh-pages'
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v5
+        path: tmp_gh-pages
+    - id: deployment
+      uses: actions/deploy-pages@v4
     permissions:
       pages: write
       id-token: write
