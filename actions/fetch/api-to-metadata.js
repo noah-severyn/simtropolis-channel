@@ -1,5 +1,4 @@
 // # api-to-metadata.js
-import './polyfill.js';
 import path from 'node:path';
 import { kFileInfo, kFileTags } from './symbols.js';
 import { slugify } from './util.js';

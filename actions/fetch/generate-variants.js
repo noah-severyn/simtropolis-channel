@@ -1,5 +1,4 @@
 // # generate-variants.js
-import './polyfill.js';
 import path from 'node:path';
 import { kFileTags, kFileNames, kExtractedAsset } from './symbols.js';
 import detectGrowables from './detect-growables.js';

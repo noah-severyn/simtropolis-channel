@@ -1,5 +1,4 @@
 // # create-prs.js
-import './polyfill.js';
 import fs from 'node:fs';
 import path from 'node:path';
 import cp from 'node:child_process';

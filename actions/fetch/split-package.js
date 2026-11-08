@@ -1,5 +1,4 @@
 // # split-package.js
-import './polyfill.js';
 import path from 'node:path';
 import { DBPF, FileType, ExemplarProperty } from 'sc4/core';
 import { FileScanner } from 'sc4/plugins';
