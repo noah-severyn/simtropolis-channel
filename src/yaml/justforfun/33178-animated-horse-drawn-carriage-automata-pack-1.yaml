@@ -12,6 +12,8 @@ info:
 
     I plan on making more packs in the future, with different types of carriages that will eventually override all Maxis cars. It may take some time though,  meanwhile hope you enjoy your chunk of Victorian traffic, whoa, whoa!
 
+    To replace all Maxis vehicles, install the complete horse-drawn set: `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-1`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-2`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-3`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-4`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-5-civic-vehicles`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-6`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-7-freight`, `pkg=justforfun:animated-london-mounted-police-automata`, `pkg=justforfun:animated-horse-riding-gentlemen-automata` and `pkg=justforfun:automated-horse-drawn-carriage-automata-patch`.
+
     justforfun
   author: justforfun
   website: https://community.simtropolis.com/files/file/33178-animated-horse-drawn-carriage-automata-pack-1/
@@ -40,28 +42,10 @@ info:
 assets:
   - assetId: justforfun-animated-horse-drawn-carriage-automata-pack-1
     exclude:
-      - "/MaxisCarsSuppressor_optional.dat"
-# variants:
-#   - variant: { justforfun:animated-horse-drawn-carriage-automata-pack-1:maxis-automata: "suppressed" }
-#     assets:
-#       - assetId: justforfun-animated-horse-drawn-carriage-automata-pack-1
-#   - variant: { justforfun:animated-horse-drawn-carriage-automata-pack-1:maxis-automata: "default" }
-#     assets:
-#       - assetId: justforfun-animated-horse-drawn-carriage-automata-pack-1
-#         exclude:
-#           - "/MaxisCarsSuppressor_optional.dat"
-# variantInfo:
-#   - variantId: justforfun:animated-horse-drawn-carriage-automata-pack-1:maxis-automata
-#     description: Choose to suppress Maxis vehicle automata, or include these automata alongside vehicle automata. Useful if you are creating historical themed cities.
-#     values:
-#       - value: "suppressed"
-#         description: Suppress Maxis vehicle automata.
-#       - value: "default"
-#         description: Include Maxis vehicle automata alongside these carriages.
-#         default: true
+      - "MaxisCarsSuppressor_optional\\.dat$"
 
 ---
 assetId: justforfun-animated-horse-drawn-carriage-automata-pack-1
 version: "1.1.0"
 lastModified: "2020-11-14T12:18:55Z"
-url: https://community.simtropolis.com/files/file/33178-animated-horse-drawn-carriage-automata-pack-1/?do=download&r=183766
+url: https://community.simtropolis.com/files/file/33178-animated-horse-drawn-carriage-automata-pack-1/?do=download

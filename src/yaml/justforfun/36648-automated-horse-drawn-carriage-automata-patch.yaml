@@ -10,12 +10,16 @@ info:
 
     Do you enjoy these automata? Check out my other files and as usual stay tuned for more coming to the STEX!
 
+    To replace all Maxis vehicles, install the complete horse-drawn set: `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-1`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-2`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-3`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-4`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-5-civic-vehicles`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-6`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-7-freight`, `pkg=justforfun:animated-london-mounted-police-automata`, `pkg=justforfun:animated-horse-riding-gentlemen-automata` and `pkg=justforfun:automated-horse-drawn-carriage-automata-patch`.
+
     justforfun
   author: justforfun
   website: https://community.simtropolis.com/files/file/36648-automated-horse-drawn-carriage-automata-patch/
   images:
     - https://www.simtropolis.com/objects/screens/monthly_2026_05/JFFCarriagesPatch.jpg.631fc84422918b3b359c68211241b02d.jpg
     - https://www.simtropolis.com/objects/screens/monthly_2026_05/pickup.jpg.1a42a2a412e081cf3d8af2756880ba27.jpg
+dependencies:
+  - justforfun:animated-horse-drawn-carriage-automata-pack-1
 assets:
   - assetId: justforfun-automated-horse-drawn-carriage-automata-patch
 
@@ -23,4 +27,4 @@ assets:
 assetId: justforfun-automated-horse-drawn-carriage-automata-patch
 version: "1.0.0"
 lastModified: "2026-05-28T11:56:09Z"
-url: https://community.simtropolis.com/files/file/36648-automated-horse-drawn-carriage-automata-patch/?do=download&r=211950
+url: https://community.simtropolis.com/files/file/36648-automated-horse-drawn-carriage-automata-patch/?do=download
