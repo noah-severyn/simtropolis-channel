@@ -7,23 +7,9 @@ info:
   description: |-
     Fourth instalment of Victorian horse-drawn carriages, to replace yet another number of Maxis car automata.
 
-    The carriages are as always animated and articulated, and feature working people carrying crates, flour bags, coal, barrels, firewood, laundry, etc.  The pack contains 6 wagons, 3 vans, 2 dog carts, 1 governess cart, and 5 floats.  
-       
-    To ensure proper functionality it is essential that you download the first two packs:
+    The carriages are as always animated and articulated, and feature working people carrying crates, flour bags, coal, barrels, firewood, laundry, etc.  The pack contains 6 wagons, 3 vans, 2 dog carts, 1 governess cart, and 5 floats.
 
-    [https://community.simtropolis.com/files/file/33178-animated-horse-drawn-carriage-automata-pack-1/](https://community.simtropolis.com/files/file/33178-animated-horse-drawn-carriage-automata-pack-1/)
-
-    [https://community.simtropolis.com/files/file/33234-animated-horse-drawn-carriage-automata-pack-2/](https://community.simtropolis.com/files/file/33234-animated-horse-drawn-carriage-automata-pack-2/)
-
-    It is also advisable that you download the third pack and the horse-riders who replace Maxis motorcycles:
-
-    [https://community.simtropolis.com/files/file/33333-animated-horse-drawn-carriages-pack-3/](https://community.simtropolis.com/files/file/33333-animated-horse-drawn-carriages-pack-3/)
-
-    [https://community.simtropolis.com/files/file/33187-animated-horse-riding-gentlemen-automata/](https://community.simtropolis.com/files/file/33187-animated-horse-riding-gentlemen-automata/)
-
-    IMPORTANT: Each pack contains a file named "MaxisCarsSuppressor\_optional", which allows you to   
-    suppress most of the remaining Maxis cars; please make sure you only keep the latest one  
-    contained in the present pack, or that it loads last.
+    To replace all Maxis vehicles, install the complete horse-drawn set: `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-1`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-2`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-3`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-4`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-5-civic-vehicles`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-6`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-7-freight`, `pkg=justforfun:animated-london-mounted-police-automata`, `pkg=justforfun:animated-horse-riding-gentlemen-automata` and `pkg=justforfun:automated-horse-drawn-carriage-automata-patch`.
 
     If you like them please review, and happy 2020 to everybody! Oops, I mean 1870!
 
@@ -40,15 +26,15 @@ info:
     - https://www.simtropolis.com/objects/screens/monthly_2020_01/Shots2.jpg.a998cf1383f0dfb310a68d6ed25d9bce.jpg
     - https://www.simtropolis.com/objects/screens/monthly_2020_01/Shots3.jpg.09743959c627cccd107ecd8d432c90d9.jpg
 dependencies:
-  - '"[https://community.simtropolis.com/files/file/33178-animated-horse-drawn-carriage-automata-pack-1/](https://community.simtropolis.com/files/file/33178-animated-horse-drawn-carriage-automata-pack-1/)"'
-  - '"[https://community.simtropolis.com/files/file/33187-animated-horse-riding-gentlemen-automata/](https://community.simtropolis.com/files/file/33187-animated-horse-riding-gentlemen-automata/)"'
-  - '"[https://community.simtropolis.com/files/file/33234-animated-horse-drawn-carriage-automata-pack-2/](https://community.simtropolis.com/files/file/33234-animated-horse-drawn-carriage-automata-pack-2/)"'
-  - '"[https://community.simtropolis.com/files/file/33333-animated-horse-drawn-carriages-pack-3/](https://community.simtropolis.com/files/file/33333-animated-horse-drawn-carriages-pack-3/)"'
+  - justforfun:animated-horse-drawn-carriage-automata-pack-1
+  - justforfun:animated-horse-drawn-carriage-automata-pack-2
 assets:
   - assetId: justforfun-animated-horse-drawn-carriage-automata-pack-4
+    exclude:
+      - "MaxisCarsSuppressor_optional\\.dat$"
 
 ---
 assetId: justforfun-animated-horse-drawn-carriage-automata-pack-4
 version: "1.1.0"
 lastModified: "2020-11-14T12:42:11Z"
-url: https://community.simtropolis.com/files/file/33365-animated-horse-drawn-carriage-automata-pack-4/?do=download&r=183839
+url: https://community.simtropolis.com/files/file/33365-animated-horse-drawn-carriage-automata-pack-4/?do=download

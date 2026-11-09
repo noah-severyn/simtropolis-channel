@@ -7,13 +7,9 @@ info:
   description: |-
     This file contains 4 horse-riding Victorian gentlemen automata that will replace Maxis motorcycles.
 
-    IMPORTANT: If you downloaded the HorseCarriagePack1:
-
-    [https://community.simtropolis.com/files/file/33178-animated-horse-drawn-carriage-automata-pack-1/?do=embed](https://community.simtropolis.com/files/file/33178-animated-horse-drawn-carriage-automata-pack-1/?do=embed)
-
-    AND you are using the MaxisCarsSuppressor\_optional file, in order for these chaps to show you need to replace such file with the one contained in this upload.
-
     Apart from that, don't forget your riding crops! ![:D](https://community.simtropolis.com/assets/emoticons/LlamaGrin.gif ":D")
+
+    To replace all Maxis vehicles, install the complete horse-drawn set: `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-1`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-2`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-3`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-4`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-5-civic-vehicles`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-6`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-7-freight`, `pkg=justforfun:animated-london-mounted-police-automata`, `pkg=justforfun:animated-horse-riding-gentlemen-automata` and `pkg=justforfun:automated-horse-drawn-carriage-automata-patch`.
   author: justforfun
   website: https://community.simtropolis.com/files/file/33187-animated-horse-riding-gentlemen-automata/
   images:
@@ -26,7 +22,7 @@ info:
 assets:
   - assetId: justforfun-animated-horse-riding-gentlemen-automata
     exclude:
-      - "/MaxisCarsSuppressor_optional.dat"
+      - "MaxisCarsSuppressor_optional\\.dat$"
 
 ---
 group: justforfun
@@ -35,6 +31,8 @@ version: "1.1.0"
 subfolder: 710-automata
 info:
   summary: Suppresses Maxis automata
+  warning: |-
+    Do not install this together with `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-7-freight`: with Pack 7 the replacement of all Maxis vehicles is complete, and the author says this file must then be deleted.
   description: |-
     Suppresses Maxis vehicular automata. Useful if you are creating historical themed cities.
   author: justforfun
@@ -48,4 +46,4 @@ assets:
 assetId: justforfun-animated-horse-riding-gentlemen-automata
 version: "1.1.0"
 lastModified: "2020-11-14T12:32:20Z"
-url: https://community.simtropolis.com/files/file/33187-animated-horse-riding-gentlemen-automata/?do=download&r=183806
+url: https://community.simtropolis.com/files/file/33187-animated-horse-riding-gentlemen-automata/?do=download

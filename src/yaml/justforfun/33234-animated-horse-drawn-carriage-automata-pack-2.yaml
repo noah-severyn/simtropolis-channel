@@ -9,12 +9,7 @@ info:
     These animated, articolated automata replace more Maxis cars and consist of 5 Landaus, 14 Berlins, 2 Broughams, and 3 chaises for a total of 24 carriages, most of which are drawn not just by one but by a pair of horses.   
     Each carriage comes with a different coachman or driver, and a Landau also features 3 passengers.
 
-    Dependencies:  
-    To ensure proper functionality, you need to dowload the first pack:  
-    [https://community.simtropolis.com/files/file/33178-animated-horse-drawn-carriage-automata-pack-1/](https://community.simtropolis.com/files/file/33178-animated-horse-drawn-carriage-automata-pack-1/)
-
-    IMPORTANT:   
-    The file "MaxisCarsSuppressor\_optional" allows you to suppress most of the remaining Maxis cars; if you use it, please make sure the file contained in this download overruns the one contained in pack 1 (or simply delete the latter).
+    To replace all Maxis vehicles, install the complete horse-drawn set: `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-1`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-2`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-3`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-4`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-5-civic-vehicles`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-6`, `pkg=justforfun:animated-horse-drawn-carriage-automata-pack-7-freight`, `pkg=justforfun:animated-london-mounted-police-automata`, `pkg=justforfun:animated-horse-riding-gentlemen-automata` and `pkg=justforfun:automated-horse-drawn-carriage-automata-patch`.
 
     More packs will come to complete the car replacement and make your Victorian streets properly crammed.
 
@@ -33,13 +28,15 @@ info:
     - https://www.simtropolis.com/objects/screens/monthly_2019_10/shot9.jpg.c43ec0e7e92ed79432e161db82fb9306.jpg
     - https://www.simtropolis.com/objects/screens/monthly_2019_10/shot10.jpg.f8a1fdf37fc66cc334bc1c9bdee1a2f7.jpg
     - https://www.simtropolis.com/objects/screens/monthly_2019_10/shot11.jpg.54825c4fc5d403751c96cfe3c901279f.jpg
+dependencies:
+  - justforfun:animated-horse-drawn-carriage-automata-pack-1
 assets:
   - assetId: justforfun-animated-horse-drawn-carriage-automata-pack-2
     exclude:
-      - "/MaxisCarsSuppressor_optional.dat"
+      - "MaxisCarsSuppressor_optional\\.dat$"
 
 ---
 assetId: justforfun-animated-horse-drawn-carriage-automata-pack-2
 version: "1.1.0"
 lastModified: "2020-11-14T12:37:14Z"
-url: https://community.simtropolis.com/files/file/33234-animated-horse-drawn-carriage-automata-pack-2/?do=download&r=183813
+url: https://community.simtropolis.com/files/file/33234-animated-horse-drawn-carriage-automata-pack-2/?do=download
