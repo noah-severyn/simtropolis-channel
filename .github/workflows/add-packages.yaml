@@ -17,9 +17,7 @@ jobs:
   add-packages:
     runs-on: ubuntu-latest
     permissions: write-all
-    # Allow only one concurrent deployment, skipping runs queued between the run 
-    # in-progress and latest queued. However, do NOT cancel in-progress runs as 
-    # we want to allow these production deployments to complete.
+    # Allow only one package-fetch run at a time, without cancelling in-progress runs.
     concurrency:
       group: ${{ github.ref }}
       cancel-in-progress: false
@@ -32,12 +30,12 @@ jobs:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       LAST_RUN_TOKEN: ${{ secrets.LAST_RUN_TOKEN }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Setup Git
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version-file: package.json
       - run: npm ci
@@ -67,12 +65,3 @@ jobs:
         uses: ./actions/send-messages
         with:
           messages: ${{ steps.create-prs.outputs.messages }}
-    outputs:
-      has-new-content: ${{ steps.fetch.outputs.has-new-content }}
-
-  deploy:
-    needs: add-packages
-    if: ${{ needs.add-packages.outputs.has-new-content == 'true' }}
-    uses: ./.github/workflows/deploy.yaml
-    secrets:
-      STEX_API_KEY: ${{ secrets.STEX_API_KEY }}
