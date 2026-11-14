@@ -29,6 +29,7 @@ export default async function fetchPackage(opts) {
 	url.searchParams.set('mode', 'updated');
 	url.searchParams.set('desctype', 'html,urls');
 	url.searchParams.set('images', 'main');
+	url.searchParams.set('sc4only', true);
 	url.searchParams.set('metadata', true);
 
 	// If an id is given, then we will not check when we fetched the latest 
